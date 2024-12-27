@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="error__message">
+      <h2>
+        Kechirasiz, kiritilgan shaharni topa olmadik. Iltimos, qayta urinib
+        ko‘ring!
+      </h2>
+    </div>
+
+    <div class="dashboard">
+      <aside class="sidebar">
+        <div class="menu-item">
+          <i class="fa-solid fa-cloud-sun" style="color: #dedede"></i> Weather
+        </div>
+        <div class="menu-item">
+          <i class="fa-solid fa-city" style="color: #dedede"></i> Cities
+        </div>
+        <div class="menu-item">
+          <i class="fa-solid fa-map" style="color: #dedede"></i> Map
+        </div>
+        <div class="menu-item">
+          <i class="fa-solid fa-sliders" style="color: #dedede"></i> Settings
+        </div>
+      </aside>
+
+      <main class="content">
+        <div class="search-bar">
+          <form class="form" action="">
+            <input
+              class="search_inp"
+              type="text"
+              placeholder="Type the name of the city and press enter"
+            />
+          </form>
+        </div>
+
+        <div class="current-weather">
+          <h1 class="city">O'zbekistan</h1>
+          <p class="rain-chance">Chance of rain: 0%</p>
+          <div class="temperature">31&deg;</div>
+          <div class="time"></div>
+          <div class="icon sunny">
+            <img src="" alt="ob-havo rasmi" />
+          </div>
+        </div>
+
+        <div class="today-forecast">
+          <h2 style="text-transform: uppercase; font-size: 20px">
+            Air Conditions
+          </h2>
+          <div class="hourly"></div>
+        </div>
+      </main>
+
+      <aside class="weekly">
+        <h2>7-Day Forecast</h2>
+        <div></div>
+      </aside>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
